@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainShield - Supply Chain Transparency | Casper Hackathon 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/casper-js-sdk@2.15.0/dist/casper-js-sdk.min.js"></script>
+</head>
+<body>
+    <div id="toast-container"></div>
+    
+    <div id="app">
+        <!-- LANDING PAGE -->
+        <div id="landing-page" class="page active">
+            <div class="animated-bg">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+
+            <header class="header">
+                <div class="container">
+                    <div class="logo">
+                        <i data-lucide="shield"></i>
+                        <span>ChainShield</span>
+                    </div>
+                    <nav>
+                        <a href="#features">Features</a>
+                        <a href="#how">How It Works</a>
+                        <button class="btn-primary" onclick="goToDashboard()">Launch App</button>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="container">
+                    <div class="badge">
+                        <i data-lucide="zap"></i>
+                        <span>Powered by Casper Blockchain</span>
+                    </div>
+                    <h1>
+                        <span class="gradient">End Supply Chain Fraud</span>
+                        <span class="gradient-alt">With Blockchain Trust</span>
+                    </h1>
+                    <p>Enterprise supply chain transparency platform eliminating counterfeit products through <span class="highlight">NFT-based authentication</span>.</p>
+                    <div class="actions">
+                        <button class="btn-primary large" onclick="goToDashboard()">
+                            Start Tracking <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary large">
+                            <i data-lucide="play"></i> Watch Demo
+                        </button>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <i data-lucide="shield"></i>
+                            <div class="value" id="stat1">0</div>
+                            <div class="label">B+ Fraud Prevented</div>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="alert-triangle"></i>
+                            <div class="value" id="stat2">0</div>
+                            <div class="label">% Lack Trust</div>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="check-circle"></i>
+                            <div class="value">2.4M+</div>
+                            <div class="label">Products Verified</div>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="target"></i>
+                            <div class="value">99.9%</div>
+                            <div class="label">Accuracy Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="features">
+                <div class="container">
+                    <h2 class="gradient">Revolutionary Features</h2>
+                    <p class="subtitle">Cutting-edge blockchain technology meets enterprise needs</p>
+                    <div class="grid">
+                        <div class="card">
+                            <div class="icon purple"><i data-lucide="package"></i></div>
+                            <h3>NFT Authentication</h3>
+                            <p>Unique NFT certificate on Casper blockchain, impossible to counterfeit.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon cyan"><i data-lucide="map"></i></div>
+                            <h3>Real-Time Tracking</h3>
+                            <p>Track products from manufacturer to consumer with live updates.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon indigo"><i data-lucide="shield"></i></div>
+                            <h3>AI Fraud Detection</h3>
+                            <p>ML algorithms detect anomalies and flag suspicious activities.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon pink"><i data-lucide="qr-code"></i></div>
+                            <h3>QR Verification</h3>
+                            <p>Scan QR codes to verify authenticity in seconds.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon orange"><i data-lucide="bar-chart-3"></i></div>
+                            <h3>Analytics Dashboard</h3>
+                            <p>Comprehensive insights into supply chain performance.</p>
+                        </div>
+                        <div class="card">
+                            <div class="icon green"><i data-lucide="lock"></i></div>
+                            <h3>Enterprise Security</h3>
+                            <p>Bank-grade encryption and decentralized storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how" class="steps">
+                <div class="container">
+                    <h2 class="gradient">How It Works</h2>
+                    <p class="subtitle">Simple 3-step process</p>
+                    <div class="step-grid">
+                        <div class="step">
+                            <div class="num">01</div>
+                            <div class="icon purple"><i data-lucide="upload"></i></div>
+                            <h3>Register Product</h3>
+                            <p>Mint NFT certificates on Casper blockchain</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="arrow"></i>
+                        <div class="step">
+                            <div class="num">02</div>
+                            <div class="icon cyan"><i data-lucide="truck"></i></div>
+                            <h3>Track Journey</h3>
+                            <p>Record checkpoints with timestamps</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="arrow"></i>
+                        <div class="step">
+                            <div class="num">03</div>
+                            <div class="icon indigo"><i data-lucide="scan"></i></div>
+                            <h3>Verify Authenticity</h3>
+                            <p>Scan QR codes for instant verification</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <p>© 2026 ChainShield. Built for Casper Hackathon.</p>
+                    <a href="https://github.com/Pooja-Bendre/ChainShield" target="_blank" style="color:#888; text-decoration:none; display:flex; align-items:center; gap:8px;">
+                        <i data-lucide="github" style="width:16px;"></i> GitHub
+                    </a>
+                </div>
+            </footer>
+        </div>
+        
+
+        <!-- DASHBOARD PAGE -->
+        <div id="dashboard-page" class="page">
+            <aside id="sidebar" class="sidebar open">
+                <div class="sidebar-header">
+                    <div class="logo">
+                        <i data-lucide="shield"></i>
+                        <span>ChainShield</span>
+                    </div>
+                    <button onclick="toggleSidebar()"><i data-lucide="menu"></i></button>
+                </div>
+                <nav>
+                    <button class="nav-item active" onclick="switchTab('overview')">
+                        <i data-lucide="bar-chart-3"></i><span>Overview</span>
+                    </button>
+                    <button class="nav-item" onclick="switchTab('products')">
+                        <i data-lucide="package"></i><span>Products</span>
+                    </button>
+                    <button class="nav-item" onclick="switchTab('register')">
+                        <i data-lucide="upload"></i><span>Register</span>
+                    </button>
+                    <button class="nav-item" onclick="switchTab('verify')">
+                        <i data-lucide="scan"></i><span>Verify</span>
+                    </button>
+                    <button class="nav-item" onclick="switchTab('tracking')">
+                        <i data-lucide="map"></i><span>Tracking</span>
+                    </button>
+                    <button class="nav-item" onclick="switchTab('fraud')">
+                        <i data-lucide="alert-triangle"></i><span>Fraud</span>
+                    </button>
+                </nav>
+                <button class="nav-item" onclick="goToLanding()">
+                    <i data-lucide="external-link"></i><span>Home</span>
+                </button>
+            </aside>
+
+            <main class="main">
+                <header class="dash-header">
+                    <input type="text" placeholder="Search..." id="search">
+                    <div class="actions">
+                        <button class="icon-btn"><i data-lucide="bell"></i></button>
+                        <button class="btn-primary" id="wallet" onclick="connectWallet()">
+                            <i data-lucide="wallet"></i><span>Connect</span>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <!-- OVERVIEW TAB -->
+                    <div id="overview" class="tab active">
+                        <div class="stat-grid">
+                            <div class="stat-card">
+                                <span>Products Tracked</span>
+                                <div class="icon purple"><i data-lucide="package"></i></div>
+                                <h3>2.4M+</h3>
+                                <span class="change">+12.5%</span>
+                            </div>
+                            <div class="stat-card">
+                                <span>Fraud Prevented</span>
+                                <div class="icon cyan"><i data-lucide="shield"></i></div>
+                                <h3>$850M</h3>
+                                <span class="change">+23.1%</span>
+                            </div>
+                            <div class="stat-card">
+                                <span>Manufacturers</span>
+                                <div class="icon indigo"><i data-lucide="users"></i></div>
+                                <h3>15,234</h3>
+                                <span class="change">+8.3%</span>
+                            </div>
+                            <div class="stat-card">
+                                <span>Verifications</span>
+                                <div class="icon pink"><i data-lucide="check-circle"></i></div>
+                                <h3>450K</h3>
+                                <span class="change">+34.2%</span>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <h3><i data-lucide="activity"></i> Recent Transactions</h3>
+                                <div id="transactions"></div>
+                            </div>
+                            <div class="card">
+                                <h3><i data-lucide="alert-triangle"></i> Fraud Alerts</h3>
+                                <div id="alerts"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTS TAB -->
+                    <div id="products" class="tab">
+                        <div class="header">
+                            <h2>All Products</h2>
+                            <button class="btn-primary" onclick="switchTab('register')">
+                                <i data-lucide="upload"></i> Register New
+                            </button>
+                        </div>
+                        <div id="products-grid" class="products"></div>
+                    </div>
+
+                    <!-- REGISTER TAB -->
+                    <div id="register" class="tab">
+                        <div class="header">
+                            <h2>Register Product</h2>
+                            <div class="steps">
+                                <div class="step active">1</div>
+                                <div class="step">2</div>
+                                <div class="step">3</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="step1" class="step-content active">
+                                <h3>Product Information</h3>
+                                <input type="text" placeholder="Product Name" id="p-name">
+                                <input type="text" placeholder="Manufacturer" id="p-manu">
+                                <select id="p-cat">
+                                    <option>Electronics</option>
+                                    <option>Fashion</option>
+                                    <option>Luxury</option>
+                                </select>
+                                <input type="text" placeholder="Serial Number" id="p-serial">
+                                <textarea placeholder="Description" id="p-desc"></textarea>
+                                <button class="btn-primary" onclick="regStep(2)">Next</button>
+                            </div>
+                            <div id="step2" class="step-content">
+                                <h3>Metadata</h3>
+                                <input type="text" placeholder="Price" id="p-price">
+                                <input type="text" placeholder="Location" id="p-loc">
+                                <div class="upload">
+                                    <i data-lucide="upload"></i>
+                                    <p>Upload Images</p>
+                                </div>
+                                <div class="btn-row">
+                                    <button class="btn-secondary" onclick="regStep(1)">Back</button>
+                                    <button class="btn-primary" onclick="regStep(3)">Next</button>
+                                </div>
+                            </div>
+                            <div id="step3" class="step-content">
+                                <h3>Review & Mint</h3>
+                                <div id="review"></div>
+                                <div class="info">
+                                    <p><strong>Network:</strong> Casper Testnet</p>
+                                    <p><strong>Gas Fee:</strong> 0.00012 CSPR</p>
+                                </div>
+                                <div class="btn-row">
+                                    <button class="btn-secondary" onclick="regStep(2)">Back</button>
+                                    <button class="btn-success" onclick="submitProduct()">
+                                        <i data-lucide="shield"></i> Mint NFT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VERIFY TAB -->
+                    <div id="verify" class="tab">
+                        <h2>Verify Product</h2>
+                        <div class="verify-grid">
+                            <div class="card">
+                                <div class="icon cyan"><i data-lucide="file-text"></i></div>
+                                <h3>Enter Product ID</h3>
+                                <input type="text" placeholder="PRD001 or 0x7a9f..." id="verify-input">
+                                <button class="btn-primary" onclick="verifyProduct()">Verify</button>
+                            </div>
+                            <div class="card">
+                                <div class="icon indigo"><i data-lucide="qr-code"></i></div>
+                                <h3>Scan QR Code</h3>
+                                <div class="scanner"><i data-lucide="qr-code"></i></div>
+                                <button class="btn-primary" onclick="scan()">Start Scan</button>
+                            </div>
+                        </div>
+                        <div id="verify-result" class="result"></div>
+                    </div>
+
+                    <!-- TRACKING TAB -->
+                    <div id="tracking" class="tab">
+                        <h2>Supply Chain Tracking</h2>
+                        <div class="track-grid">
+                            <div class="card">
+                                <h3>Select Product</h3>
+                                <div id="track-list"></div>
+                            </div>
+                            <div class="card">
+                                <h3><i data-lucide="map"></i> Timeline</h3>
+                                <div id="timeline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FRAUD TAB -->
+                    <div id="fraud" class="tab">
+                        <div class="header">
+                            <h2>AI Fraud Detection</h2>
+                            <div class="badge green">Active</div>
+                        </div>
+                        <div class="stat-grid">
+                            <div class="stat-card">
+                                <span>Detected</span>
+                                <h3>3,521</h3>
+                            </div>
+                            <div class="stat-card">
+                                <span>Analyzed</span>
+                                <h3>2.4M</h3>
+                            </div>
+                            <div class="stat-card">
+                                <span>Accuracy</span>
+                                <h3>99.7%</h3>
+                            </div>
+                            <div class="stat-card">
+                                <span>Response</span>
+                                <h3>0.8s</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Active Alerts</h3>
+                            <div id="fraud-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Blockchain Records Section -->
+<div id="blockchain-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 99999; padding: 40px; overflow-y: auto;">
+    <div style="max-width: 800px; margin: 0 auto; background: #1e293b; border-radius: 24px; padding: 40px; position: relative;">
+        <button onclick="document.getElementById('blockchain-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; font-size: 32px; cursor: pointer;">&times;</button>
+        <div id="blockchain-modal-content"></div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
