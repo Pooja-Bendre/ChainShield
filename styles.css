@@ -1049,3 +1049,48 @@ button { cursor: pointer; border: none; font-family: inherit; }
     border-radius: 12px;
     padding: 24px;
 }
+
+/* FIX: HOW IT WORKS SECTION - NO OVERLAP */
+.step-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 32px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    padding: 40px 24px !important;
+    position: relative !important;
+    min-height: auto !important;
+}
+
+.step .num {
+    font-size: 72px;
+    font-weight: 900;
+    color: rgba(255, 0, 0, 0.1);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 1;
+}
+
+.step .icon {
+    position: relative;
+    z-index: 2;
+}
+
+.step h3, .step p {
+    position: relative;
+    z-index: 2;
+}
+
+.arrow {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .step-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
