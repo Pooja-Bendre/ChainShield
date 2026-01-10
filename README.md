@@ -11,7 +11,7 @@
 
 **Blockchain-Powered Product Authentication & Supply Chain Tracking**
 
-[🌐 Live Demo](https://chain-shield-peach.vercel.app) • [📹 Video Demo](https://youtu.be/YOUR_VIDEO) • [💻 GitHub](https://github.com/poojabendre/chainshield) • [📄 Docs](https://docs.chainshield.io)
+[🌐 Live Demo](https://chainshield.netlify.app/) • [📹 Video Demo](https://youtu.be/NYkah3hQCQU?si=kAtTZYfuBFBxXJLl) • [💻 GitHub](https://github.com/Pooja-Bendre/ChainShield) • [📄 Docs](https://docs.chainshield.io)
 
 Built for **Casper Hackathon 2026** | Main Track Submission
 
@@ -626,7 +626,7 @@ https://testnet.cspr.live/deploy/0x7a9f2b3e8c4d1f6a9b2c3d4e5f6a7b8c9d0e1f2a
 
 ```bash
 # 1. Clone Repository
-git clone https://github.com/poojabendre/chainshield.git
+git clone https://github.com/Pooja-Bendre/ChainShield.git
 cd chainshield
 
 # 2. Open in Browser
@@ -807,7 +807,7 @@ contracts/
 
 ### Watch Full Demonstration
 
-[![ChainShield Demo Video](./assets/video-thumbnail.png)](https://youtu.be/YOUR_VIDEO_ID)
+[![ChainShield Demo Video]](https://youtu.be/NYkah3hQCQU?si=kAtTZYfuBFBxXJLl)
 
 **Video Highlights:**
 - 00:00 - Introduction & Problem Statement
@@ -822,35 +822,6 @@ contracts/
 
 ---
 
-## 👥 Team
-
-<div align="center">
-
-### 🏆 Solo Builder
-
-<table>
-<tr>
-<td align="center">
-<img src="https://via.placeholder.com/150x150/FF0000/FFFFFF?text=PB" alt="Pooja Bendre" width="150" style="border-radius: 50%;"/>
-<br />
-<b>Pooja Bendre</b>
-<br />
-<i>Full-Stack Blockchain Developer</i>
-<br /><br />
-<a href="https://github.com/poojabendre">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-<a href="https://linkedin.com/in/poojabendre">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="https://twitter.com/poojabendre">
-<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
-</a>
-<br /><br />
-📧 pooja.bendre@chainshield.io
-</td>
-</tr>
-</table>
 
 ### 🎯 Contributions
 
@@ -1047,21 +1018,6 @@ git push origin feature/AmazingFeature
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-```
-MIT License
-
-Copyright (c) 2026 Pooja Bendre
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ---
 
@@ -1078,8 +1034,6 @@ copies or substantial portions of the Software.
 
 - [Casper Network](https://casper.network) - Blockchain platform
 - [Lucide Icons](https://lucide.dev) - Beautiful icon library
-- [Vercel](https://vercel.com) - Deployment platform
-
 ---
 
 ## 📞 Support & Contact
@@ -1095,7 +1049,7 @@ copies or substantial portions of the Software.
 
 Found a bug? Have a feature request?
 
-- 🐛 [Report Bug](https://github.com/poojabendre/chainshield/issues/new?template=bug_report.md)
+- 🐛 [Report Bug](https://github.com/Pooja-Bendre/ChainShield/issues/new?template=bug_report.md)
 - 💡 [Request Feature](https://github.com/poojabendre/chainshield/issues/new?template=feature_request.md)
 
 ---
@@ -1104,9 +1058,9 @@ Found a bug? Have a feature request?
 
 | Resource | URL |
 |----------|-----|
-| 🌐 **Live Demo** | [chain-shield-peach.vercel.app](https://chain-shield-peach.vercel.app) |
-| 📹 **Video Demo** | [youtu.be/YOUR_VIDEO](https://youtu.be/YOUR_VIDEO) |
-| 💻 **GitHub Repo** | [github.com/poojabendre/chainshield](https://github.com/poojabendre/chainshield) |
+| 🌐 **Live Demo** | [chainshield.netifly](https://chainshield.netlify.app/) |
+| 📹 **Video Demo** | [youtu.be](https://youtu.be/NYkah3hQCQU?si=kAtTZYfuBFBxXJLl) |
+| 💻 **GitHub Repo** | [github.com/Pooja-Bendre/ChainShield](https://github.com/Pooja-Bendre/ChainShield) |
 | 🔗 **Smart Contract** | [testnet.cspr.live/contract/hash-123...](https://testnet.cspr.live) |
 | 📱 **Casper Wallet** | [Chrome Extension](https://chrome.google.com/webstore/casper-signer) |
 | 💧 **Testnet Faucet** | [testnet.cspr.live/tools/faucet](https://testnet.cspr.live/tools/faucet) |
@@ -1124,8 +1078,6 @@ Found a bug? Have a feature request?
 
 [![Powered by Casper](https://img.shields.io/badge/Powered%20by-Casper%20Network-FF0000?style=for-the-badge&logo=blockchain)](https://casper.network)
 [![Built with Rust](https://img.shields.io/badge/Built%20with-Rust-000000?style=for-the-badge&logo=rust)](https://rust-lang.org)
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
-
 ---
 
 ### ⭐ If you like this project, please give it a star!
@@ -1145,8 +1097,5 @@ Found a bug? Have a feature request?
 - [Deployment Guide](./docs/deployment.md)
 - [Security Audit](./docs/security-audit.md)
 
----
 
-**Last Updated**: January 9, 2026  
-**Version**: 1.0.0  
-**Status**: ✅ Production Ready
+
